@@ -8,13 +8,22 @@ Each experiment demonstrates important concepts of **arrays, stacks, queues, lin
 ## 📂 Repository Structure
 Each experiment is placed in a separate folder with proper source code, test cases, and documentation.
 ```
-DSA-Lab/
-│── Experiment-01/
-│── Experiment-02/
-│── Experiment-03/
-│── ...
-│── Experiment-18/
-│── README.md
+KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
+├── experiment_1/
+│   ├── exp1.c
+│   └── README.md
+├── experiment_2/
+│   ├── exp2.c
+│   └── README.md
+├── experiment_3/
+│   ├── exp3.c
+│   └── README.md
+├── ...
+├── experiment_18/
+│   ├── exp18.c
+│   └── README.md
+└── README.md
+
 ```
 
 ---
