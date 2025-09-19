@@ -23,8 +23,8 @@ DSA-Lab/
 
 | Expt. No. | Experiment |
 |-----------|------------|
-| 1 | Find the sum of two sparse polynomials using arrays |
-| 2 | Find the transpose of a sparse matrix and sum of two sparse matrices |
+| 1 | [Find the sum of two sparse polynomials using arrays](./experiment_1) |
+| 2 | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2) |
 | 3 | Convert infix expression to postfix/prefix and evaluate using stack |
 | 4 | Implement Queue, Dequeue, and Circular Queue using arrays |
 | 5 | Implement back and forward navigation of visited web pages using doubly linked list |
