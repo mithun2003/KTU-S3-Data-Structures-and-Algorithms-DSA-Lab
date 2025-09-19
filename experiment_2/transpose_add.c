@@ -23,6 +23,7 @@ void readSparseMatrix(int matrix[MAX][3], char name) {
     printf("Row %d: ", i);
     scanf("%d %d %d", &matrix[i][0], &matrix[i][1], &matrix[i][2]);
   }
+  printf("\n");
 }
 
 void displaySparseMatrix(int matrix[MAX][3]) {

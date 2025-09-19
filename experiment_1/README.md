@@ -1,4 +1,4 @@
-# Experiment 01: Sum of Two Sparse Polynomials using Arrays
+# Experiment 01: Find the Sum of Two Sparse Polynomials using Arrays
 
 
 ## 🎯 Aim
@@ -8,42 +8,42 @@ To implement a program that finds the sum of two sparse polynomials using arrays
 ## 📝 Algorithm
 1. Start
 
-2. Read polynomial p1 (sotre as coeff-exponent pairs in descending order of exponents) with size size1.
+2. Read polynomial `p1` (sotre as coeff-exponent pairs in descending order of exponents) with size `size1`.
 
-3. Read polynomial p2 (same way) with size size2.
+3. Read polynomial `p2` (same way) with size `size2`.
 
 4. Initialize i,j,k=0.
 
-5. while both i<size1 and j<size2
+5. while both `i<size1` and `j<size2`
 
    - if p1[i][1]==p2[j][1] then
 
-      - add coefficients → sum [k][0] = p1[i][0]+p2[j][0]
+      - add `coefficients` → sum [k][0] = p1[i][0]+p2[j][0]
 
-      - store exponent → sum[k][1]= p1[i][1]
+      - store `exponent` → sum[k][1]= p1[i][1]
 
       - increment i,j → i++, j++
 
-   - else if (p[i][i]> p[j][1]) then
+   - else if `p[i][i]> p[j][1]` then
 
-      -  store coefficient of p1 →  sum[k][0] = p1[i][0]
+      -  store `coefficient` of p1 →  sum[k][0] = p1[i][0]
 
-      - store exponent of p1 → sum [k][1]=p1[i][1]
+      - store `exponent` of p1 → sum [k][1]=p1[i][1]
 
       - increment i → i++
 
    - else then
-      -  store coefficient of p2 →  sum[k][0] = p2[j][0]
+      -  store `coefficient` of p2 →  sum[k][0] = p2[j][0]
 
-      - store exponent of p2 → sum [k][1]=p1[j][1]
+      - store `exponent` of p2 → sum [k][1]=p1[j][1]
 
       - increment j → j++
 
    - increment k → k++
 
-6. Copy remaining terms of p1(if any)
+6. Copy remaining terms of `p1`(if any)
 
-   - while i<size1
+   - while `i<size1`
 
      - sum[k][0] = p1[i][0]
 
@@ -51,9 +51,9 @@ To implement a program that finds the sum of two sparse polynomials using arrays
 
      - increment i, k → i++, k++;
 
-7. Copy remaining terms of p2(if any)
+7. Copy remaining terms of `p2`(if any)
 
-   - while j<size2
+   - while `j<size2`
 
      - sum[k][0] = p2[j][0]
 
@@ -69,7 +69,7 @@ To implement a program that finds the sum of two sparse polynomials using arrays
 
       - Print sum[i][0]x^sum[i][1]
 
-      - if i < sumSize -1
+      - if `i < sumSize - 1`
 
          - print(" + ")
 10. Stop
