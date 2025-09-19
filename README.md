@@ -3,7 +3,6 @@
 This repository contains the **DSA Lab experiments** implemented as part of the curriculum.  
 Each experiment demonstrates important concepts of **arrays, stacks, queues, linked lists, trees, graphs, searching, sorting, and hashing**.
 
----
 
 ## 📂 Repository Structure
 Each experiment is placed in a separate folder with proper source code, test cases, and documentation.
@@ -26,7 +25,6 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 
 ```
 
----
 
 ## 🧪 List of Experiments
 
@@ -34,7 +32,7 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 |-----------|------------|
 | 1 | [Find the sum of two sparse polynomials using arrays](./experiment_1) |
 | 2 | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2) |
-| 3 | Convert infix expression to postfix/prefix and evaluate using stack |
+| 3 | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3) |
 | 4 | Implement Queue, Dequeue, and Circular Queue using arrays |
 | 5 | Implement back and forward navigation of visited web pages using doubly linked list |
 | 6 | Implement addition and multiplication of polynomials using singly linked lists |
@@ -51,22 +49,26 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 | 17 | Maximize activity points by participating in at most **k** events |
 | 18 | Merge **k** sorted lists into a single sorted list using a min-heap |
 
----
 
 ## ⚙️ Setup Instructions
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/<your-username>/DSA-Lab.git
-   cd DSA-Lab
+   https://github.com/mithun2003/KTU-S3-Data-Structures-and-Algorithms-DSA-Lab
+   cd KTU-S3-Data-Structures-and-Algorithms-DSA-Lab
+   ```
+
 2. Navigate to a specific experiment folder
    ```
    cd Experiment-01
-3. Compile and run (example in C)
+   ```
+
+3. Compile and run
    ```
    gcc file_name.c
    ./a.out
----
+   ```
+
 
 ## ✨ Features
 
@@ -77,3 +79,16 @@ Well-structured and modular code
 Each experiment is self-contained and documented
 
 Useful for lab submissions and interview preparation
+
+
+## 👨‍💻 About the Author
+
+Hi, I'm **Mithun Thomas** 👋  
+- 🎓 B.Tech CSE (2024–2028) @ College of Engineering, Kottarakkara  
+- 💻 Passionate about **problem-solving, DSA, and software development**  
+- 🌱 Currently exploring **Machine Learning, AI, and System Design**  
+- 📫 Reach me at: [mithun2003](https://github.com/mithun2003)
+
+---
+
+⭐ If you like this repository, don't forget to **star it** on GitHub!
