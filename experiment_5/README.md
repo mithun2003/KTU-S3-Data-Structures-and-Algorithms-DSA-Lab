@@ -1,13 +1,12 @@
 # Experiment 5: Browser Navigation Simulation using Doubly Linked List
 
 ## Aim
+
 To simulate the **backward and forward navigation of visited web pages** in a web browser using **doubly linked list operations**.
-
-
 
 ## Algorithm
 
-We assume:  
+We assume:
 
 - Each visited page is represented as a **Node** with:
   - `url` → the page URL
@@ -16,11 +15,9 @@ We assume:
 - `head` → points to the first page in history
 - `current` → points to the current page being viewed
 
-
-
 ### 1. Visit New Page
 
-**Algorithm visit_page(url):**  
+**Algorithm visit_page(url):**
 
 1. Create a new node `newNode` with `newNode→url = url`.
 2. Set `newNode→prev = current` and `newNode→next = NULL`.
@@ -36,7 +33,7 @@ We assume:
 
 ### 2. Go Back
 
-**Algorithm go_back():**  
+**Algorithm go_back():**
 
 1. If `current == NULL` or `current→prev == NULL`:
    - Output "No previous page."
@@ -44,11 +41,9 @@ We assume:
    - Set `current = current→prev`.
    - Display "Moved back to: current→url".
 
-
-
 ### 3. Go Forward
 
-**Algorithm go_forward():**  
+**Algorithm go_forward():**
 
 1. If `current == NULL` or `current→next == NULL`:
    - Output "No next page."
@@ -56,22 +51,18 @@ We assume:
    - Set `current = current→next`.
    - Display "Moved forward to: current→url".
 
-
-
 ### 4. Display Current Page
 
-**Algorithm display_current():**  
+**Algorithm display_current():**
 
 1. If `current == NULL`:
    - Output "No page currently opened."
 2. Else:
    - Display "Current Page: current→url".
 
-
-
 ### 5. Display Browsing History
 
-**Algorithm display_history():**  
+**Algorithm display_history():**
 
 1. If `head == NULL`:
    - Output "No browsing history."
@@ -82,8 +73,8 @@ We assume:
      - Else, display `temp→url`
      - Move `temp = temp→next`.
 
-
 ## ⌨️ Output (Example)
+
 ```
 Browser Navigation Simulation:
 1. Visit New Page
@@ -133,3 +124,4 @@ www.google.com
 
 Enter your choice: 6
 Exiting program...
+```

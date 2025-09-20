@@ -87,14 +87,14 @@ void displayHistory() {
 
 int main() {
     int choice;
+    printf("\nBrowser Navigation Simulation:\n");
+    printf("1. Visit New Page\n");
+    printf("2. Back\n");
+    printf("3. Forward\n");
+    printf("4. Display Current Page\n");
+    printf("5. Display Browsing History\n");
+    printf("6. Exit\n");
     while (1) {
-        printf("\nBrowser Navigation Simulation:\n");
-        printf("1. Visit New Page\n");
-        printf("2. Back\n");
-        printf("3. Forward\n");
-        printf("4. Display Current Page\n");
-        printf("5. Display Browsing History\n");
-        printf("6. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
