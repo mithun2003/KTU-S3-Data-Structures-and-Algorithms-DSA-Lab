@@ -33,8 +33,8 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 | 1 | [Find the sum of two sparse polynomials using arrays](./experiment_1) |
 | 2 | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2) |
 | 3 | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3) |
-| 4 | Implement Queue, Dequeue, and Circular Queue using arrays |
-| 5 | Implement back and forward navigation of visited web pages using doubly linked list |
+| 4 | [Implement Queue, Dequeue, and Circular Queue using arrays](./experiment_4) |
+| 5 | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_5) |
 | 6 | Implement addition and multiplication of polynomials using singly linked lists |
 | 7 | Create a binary tree for an arithmetic expression and find prefix/postfix equivalent |
 | 8 | Implement a dictionary of word-meaning pairs using binary search trees |
