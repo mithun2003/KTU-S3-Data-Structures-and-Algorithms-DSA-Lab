@@ -39,3 +39,13 @@ Original Infix Expression: (a+b)*(c+d)
 Postfix Expression: ab+cd+*
 Prefix Expression: *+ab+cd
 ```
+
+## 💻 Code Screenshot
+
+![Code Screenshot](/screenshots/3.1.png)
+![Code Screenshot](/screenshots/3.2.png)
+![Code Screenshot](/screenshots/3.3.png)
+
+## 🖥️ Output Screenshot
+
+![Code Screenshot](/screenshots/3.out.png)
