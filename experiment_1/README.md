@@ -100,8 +100,9 @@ Sum of Polynomial: 8x^2 + 7x^1 + 14x^0
 
 ## 💻 Code Screenshot
 
-![Code Screenshot](screenshots/code.png)
+![Code Screenshot](/screenshots/1.1.png)
+![Code Screenshot](/screenshots/1.2.png)
 
 ## 🖥️ Output Screenshot
 
-![Output Screenshot](screenshots/output.png)
+![Code Screenshot](/screenshots/1.out.png)
