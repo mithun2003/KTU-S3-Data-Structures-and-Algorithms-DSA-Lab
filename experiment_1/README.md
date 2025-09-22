@@ -97,3 +97,11 @@ First Polynomial: 3x^2 + 6x^1 + 5x^0
 Second Polynomial: 5x^2 + 1x^1 + 0x^0
 Sum of Polynomial: 8x^2 + 7x^1 + 14x^0
 ```
+
+## 💻 Code Screenshot
+
+![Code Screenshot](screenshots/code.png)
+
+## 🖥️ Output Screenshot
+
+![Output Screenshot](screenshots/output.png)
