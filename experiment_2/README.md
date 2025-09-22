@@ -179,3 +179,14 @@ Row Col Value
 1   1   9
 2   2   6
 ```
+
+
+## 💻 Code Screenshot
+
+![Code Screenshot](/screenshots/2.1.png)
+![Code Screenshot](/screenshots/2.2.png)
+![Code Screenshot](/screenshots/2.3.png)
+
+## 🖥️ Output Screenshot
+
+![Code Screenshot](/screenshots/2.out.png)
