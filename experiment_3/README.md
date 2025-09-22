@@ -8,23 +8,27 @@ To implement a program that converts an **Infix Expression** into its equivalent
 
 ### Infix to Postfix
 
-1. Initialize an empty stack.
-2. Scan the infix expression from left to right.
-3. If the symbol is an operand, add it to the output.
-4. If the symbol is '(', push it onto the stack.
-5. If the symbol is ')', pop and add all operators to the output until '(' is encountered. Discard the pair of parentheses.
-6. If the symbol is an operator:
+1. Start
+2. Initialize an empty stack.
+3. Scan the infix expression from left to right.
+4. If the symbol is an operand, add it to the output.
+5. If the symbol is '(', push it onto the stack.
+6. If the symbol is ')', pop and add all operators to the output until '(' is encountered. Discard the pair of parentheses.
+7. If the symbol is an operator:
    - While the stack is not empty **and** the precedence of the top operator is greater or equal to the scanned operator, pop from stack and add to output.
    - Push the scanned operator.
-7. After scanning, pop and append all remaining operators from the stack.
-8. The final string is the postfix expression.
+8. After scanning, pop and append all remaining operators from the stack.
+9. The final string is the postfix expression.
+10. Stop
 
 ### Infix to Prefix
 
-1. Reverse the infix expression.
-2. Swap '(' with ')' and vice versa.
-3. Convert the modified expression to postfix using the above algorithm.
-4. Reverse the resulting postfix expression to get the prefix expression.
+1. Start
+2. Reverse the infix expression.
+3. Swap '(' with ')' and vice versa.
+4. Convert the modified expression to postfix using the above algorithm.
+5. Reverse the resulting postfix expression to get the prefix expression.
+6. Stop
 
 ## ⌨️ Output (Example)
 
