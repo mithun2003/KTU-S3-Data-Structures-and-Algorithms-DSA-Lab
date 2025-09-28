@@ -125,3 +125,13 @@ www.google.com
 Enter your choice: 6
 Exiting program...
 ```
+
+
+## 💻 Code Screenshot
+
+![Code Screenshot](/screenshots/5.1.png)
+![Code Screenshot](/screenshots/5.2.png)
+
+## 🖥️ Output Screenshot
+
+![Code Screenshot](/screenshots/5.out.png)
