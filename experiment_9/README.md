@@ -81,13 +81,13 @@ The equivalent postfix is: 32+4*
 
 
 **Expression Tree Structure:**
+  ```
     *
    / \
   +   4
  / \
 3   2
-
-
+```
 
 
 ## 🔁 Traversal Results
