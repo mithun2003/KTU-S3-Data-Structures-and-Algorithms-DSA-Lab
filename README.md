@@ -33,21 +33,23 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 | 1         | [Find the sum of two sparse polynomials using arrays](./experiment_1)                                 |
 | 2         | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2)                |
 | 3         | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3)                 |
-| 4         | [Implement Queue, Dequeue, and Circular Queue using arrays](./experiment_4)                           |
-| 5         | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_5) |
-| 6         | [Implement addition and multiplication of polynomials using singly linked lists](./experiment_6)      |
-| 7         | Create a binary tree for an arithmetic expression and find prefix/postfix equivalent                  |
-| 8         | Implement a dictionary of word-meaning pairs using binary search trees                                |
-| 9         | Find the shortest distance of every cell from a landmine inside a maze                                |
-| 10        | Water jug problem (10L, 7L, 4L containers) modeled as a graph                                         |
-| 11        | Implement find-and-replace feature in a text editor                                                   |
-| 12        | Implement efficient search for an item in a sorted array                                              |
-| 13        | Implement Bubble Sort, Insertion Sort, Radix Sort, Quick Sort, and Merge Sort, then compare steps     |
-| 14        | Customer queue prioritization (Differently abled > Senior citizen > Defence > Ordinary)               |
-| 15        | Implement a spell checker using a hash table with fast lookup & suggestions                           |
-| 16        | Simulation of a basic memory allocator and garbage collector using doubly linked list                 |
-| 17        | Maximize activity points by participating in at most **k** events                                     |
-| 18        | Merge **k** sorted lists into a single sorted list using a min-heap                                   |
+| 4         | [Implement Queue arrays](./experiment_4)                           |
+| 5         | [Implement Circular Queue using arrays](./experiment_4)                           |
+| 6         | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_5) |
+| 7         | [Implement addition of polynomials using singly linked lists](./experiment_6)      |
+| 8        | [Implement multiplication of polynomials using singly linked lists](./experiment_6)      |
+| 9         | [Create a binary tree for an arithmetic expression and find prefix/postfix equivalent](./experiment_9/)|
+| 10         | Implement a dictionary of word-meaning pairs using binary search trees                                |
+| 11         | Find the shortest distance of every cell from a landmine inside a maze                                |
+| 12        | Water jug problem (10L, 7L, 4L containers) modeled as a graph                                         |
+| 13        | Implement find-and-replace feature in a text editor                                                   |
+| 14        | Implement efficient search for an item in a sorted array                                              |
+| 15        | Implement Bubble Sort, Insertion Sort, Radix Sort, Quick Sort, and Merge Sort, then compare steps     |
+| 16        | Customer queue prioritization (Differently abled > Senior citizen > Defense > Ordinary)               |
+| 17        | Implement a spell checker using a hash table with fast lookup & suggestions                           |
+| 18        | Simulation of a basic memory allocator and garbage collector using doubly linked list                 |
+| 19        | Maximize activity points by participating in at most **k** events                                     |
+| 20        | Merge **k** sorted lists into a single sorted list using a min-heap                                   |
 
 ## ⚙️ Setup Instructions
 
