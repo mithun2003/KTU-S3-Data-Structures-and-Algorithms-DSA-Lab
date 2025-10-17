@@ -9,13 +9,13 @@ Each experiment is placed in a separate folder with proper source code, test cas
 
 ```
 KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
-├── experiment_1/
+├── experiment_01/
 │   ├── exp1.c
 │   └── README.md
-├── experiment_2/
+├── experiment_02/
 │   ├── exp2.c
 │   └── README.md
-├── experiment_3/
+├── experiment_03/
 │   ├── exp3.c
 │   └── README.md
 ├── ...
@@ -30,15 +30,15 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 
 | Exp. No. | Experiment                                                                                                                                                                                                                                                                 |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1        | [Find the sum of two sparse polynomials using arrays](./experiment_1)                                                                                                                                                                                                      |
-| 2        | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2)                                                                                                                                                                                     |
-| 3        | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3)                                                                                                                                                                                      |
-| 4        | [Implement Queue arrays](./experiment_4_5/)                                                                                                                                                                                                                                |
-| 5        | [Implement Circular Queue using arrays](./experiment_4_5/)                                                                                                                                                                                                                 |
-| 6        | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_6)                                                                                                                                                                      |
-| 7        | [Implement addition of polynomials using singly linked lists](./experiment_7_8/)                                                                                                                                                                                           |
-| 8        | [Implement multiplication of polynomials using singly linked lists](./experiment_7_8/)                                                                                                                                                                                     |
-| 9        | [Create a binary tree for an arithmetic expression and find prefix/postfix equivalent](./experiment_9/)                                                                                                                                                                    |
+| 1        | [Find the sum of two sparse polynomials using arrays](./experiment_01)                                                                                                                                                                                                      |
+| 2        | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_02)                                                                                                                                                                                     |
+| 3        | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_03)                                                                                                                                                                                      |
+| 4        | [Implement Queue arrays](./experiment_04_5/)                                                                                                                                                                                                                                |
+| 5        | [Implement Circular Queue using arrays](./experiment_04_5/)                                                                                                                                                                                                                 |
+| 6        | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_06)                                                                                                                                                                      |
+| 7        | [Implement addition of polynomials using singly linked lists](./experiment_07_8/)                                                                                                                                                                                           |
+| 8        | [Implement multiplication of polynomials using singly linked lists](./experiment_07_8/)                                                                                                                                                                                     |
+| 9        | [Create a binary tree for an arithmetic expression and find prefix/postfix equivalent](./experiment_09/)                                                                                                                                                                    |
 | 10       | [Implement a dictionary of word-meaning pairs using binary search trees](./experiment_10/)                                                                                                                                                                                 |
 | 11       | Given an array of sorted items, implement an efficient algorithm to search for specific item in the array(binary search) / Implement efficient search for an item in a sorted array                                                                                        |
 | 12       | Implement Bubble Sort, Insertion Sort, Radix Sort, Quick Sort, and Merge Sort, then compare steps                                                                                                                                                                          |
@@ -63,7 +63,7 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 2. Navigate to a specific experiment folder
 
    ```
-   cd experiment_1
+   cd experiment_01
    ```
 
 3. Compile and run
