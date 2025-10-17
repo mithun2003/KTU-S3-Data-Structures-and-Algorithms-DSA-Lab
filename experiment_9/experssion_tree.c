@@ -5,38 +5,38 @@
 #define MAX 100
 
 // Tree node structure
-struct Node {
+typedef struct Node {
     char data;
     struct Node *left, *right;
-};
+} Node;
 
 // Stack node structure
-struct Stack {
+typedef struct Stack {
     struct Node* data;
     struct Stack* next;
-};
+} Stack;
 
-struct Stack* top = NULL;
+Stack* top = NULL;
 
 // Function to create new tree node
-struct Node* createNode(char value) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+Node* createNode(char value) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->data = value;
     newNode->left = newNode->right = NULL;
     return newNode;
 }
 
 // Stack operations
-void push(struct Node* treeNode) {
-    struct Stack* temp = (struct Stack*)malloc(sizeof(struct Stack));
+void push(Node* treeNode) {
+    Stack* temp = (Stack*)malloc(sizeof(Stack));
     temp->data = treeNode;
     temp->next = top;
     top = temp;
 }
 
-struct Node* pop() {
+Node* pop() {
     if (top == NULL) return NULL;
-    struct Stack* temp = top;
+    Stack* temp = top;
     struct Node* res = top->data;
     top = top->next;
     free(temp);
@@ -44,15 +44,15 @@ struct Node* pop() {
 }
 
 // Create Expression Tree from postfix expression
-struct Node* createExpressionTree(char postfix[]) {
+Node* createExpressionTree(char postfix[]) {
     int i = 0;
     char symbol;
     while ((symbol = postfix[i]) != '\0') {
         if (isdigit(symbol)) {  // Operand
-            struct Node* operandNode = createNode(symbol);
+            Node* operandNode = createNode(symbol);
             push(operandNode);
         } else {  // Operator
-            struct Node* operatorNode = createNode(symbol);
+            Node* operatorNode = createNode(symbol);
             operatorNode->right = pop();
             operatorNode->left = pop();
             push(operatorNode);
@@ -63,7 +63,7 @@ struct Node* createExpressionTree(char postfix[]) {
 }
 
 // Inorder traversal (infix)
-void inorder(struct Node* root) {
+void inorder(Node* root) {
     if (root != NULL) {
         if (root->left && root->right) printf("(");
         inorder(root->left);
@@ -74,7 +74,7 @@ void inorder(struct Node* root) {
 }
 
 // Preorder traversal (prefix)
-void preorder(struct Node* root) {
+void preorder(Node* root) {
     if (root != NULL) {
         printf("%c", root->data);
         preorder(root->left);
@@ -83,7 +83,7 @@ void preorder(struct Node* root) {
 }
 
 // Postorder traversal (postfix)
-void postorder(struct Node* root) {
+void postorder(Node* root) {
     if (root != NULL) {
         postorder(root->left);
         postorder(root->right);
@@ -92,7 +92,7 @@ void postorder(struct Node* root) {
 }
 
 int main() {
-    struct Node* root = NULL;
+    Node* root = NULL;
     int choice;
     char postfix[MAX];
 

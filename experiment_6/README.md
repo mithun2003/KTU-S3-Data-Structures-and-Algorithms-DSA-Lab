@@ -1,121 +1,137 @@
-# Experiment 6: Implement Addition And Multiplication Of Polynomials Using Singly Linked Lists
+# Experiment 5: Browser Navigation Simulation using Doubly Linked List
 
-## 🔹 6.1 Addition of Polynomials using Singly Linked List
+## Aim
 
-## 🎯 Aim
-
-To implement **addition of two polynomials** using **singly linked lists** and display the result.
+To simulate the **backward and forward navigation of visited web pages** in a web browser using **doubly linked list operations**.
 
 ## Algorithm
 
-1. Start
+We assume:
 
-2. Represent Polynomial
+- Each visited page is represented as a **Node** with:
+  - `url` → the page URL
+  - `prev` → pointer to the previous page
+  - `next` → pointer to the next page
+- `head` → points to the first page in history
+- `current` → points to the current page being viewed
 
-   - Each term is represented as a **node** with:
-     - `coeff` → coefficient of the term
-     - `exp` → exponent of the term
-     - `next` → pointer to the next term
+### 1. Visit New Page
 
-3. Read the number of terms and corresponding `(coefficient, exponent)` pairs for the first polynomial and store them in `poly1`.
+**Algorithm visit_page(url):**
 
-4. Read the number of terms and corresponding `(coefficient, exponent)` pairs for the second polynomial and store them in `poly2`.
-
-5. Polynomial Addition
-
-   1. Initialize `result` as an empty polynomial.
-   2. While both `poly1` and `poly2` are not NULL do
-      - if `poly1→exponent` == `poly2→exponent` then
-        - Sum coefficients and create term in `result`.
-        - Move both `poly1` and `poly2` to next.
-      - else if `poly1→exponent > poly2→exponent` then
-        - Add `poly1` term to `result`.
-        - Move `poly1` to next.
-      - else then
-        - Add `poly2` term to `result`.
-        - Move `poly2` to next.
-   3. Append remaining terms from `poly1` or `poly2` to `result`.
-
-6. Display `poly1`, `poly2`, and the `result` polynomials
-   - Traverse through the list.
-   - Print each term in the format `coeff x^exp`.
-   - If not the last term, print `" + "`.
-7. Stop
-
-## ⌨️ Output (Example)
-
-```
-Enter number of terms for Polynomial 1: 3
-Enter coefficient and exponent for term 1: 5 2
-Enter coefficient and exponent for term 2: 3 1
-Enter coefficient and exponent for term 3: 2 0
-
-Enter number of terms for Polynomial 2: 3
-Enter coefficient and exponent for term 1: 4 3
-Enter coefficient and exponent for term 2: 2 1
-Enter coefficient and exponent for term 3: 1 0
-
-Polynomial 1: 5x^2 + 3x^1 + 2x^0
-Polynomial 2: 4x^3 + 2x^1 + 1x^0
-Sum: 4x^3 + 5x^2 + 5x^1 + 3x^0
-
-```
+1. Create a new node `newNode` with `newNode→url = url`.
+2. Set `newNode→prev = current` and `newNode→next = NULL`.
+3. If `current` is not NULL:
+   - Remove all forward history (all nodes after `current`).
+   - Set `current→next = newNode`.
+4. Else (no pages visited yet):
+   - Set `head = newNode`.
+5. Set `current = newNode`.
+6. Display "Visited: url".
 
 ---
 
-## 🔹 6.2 Multiplication of Polynomials using Singly Linked List
+### 2. Go Back
 
-## 🎯 Aim
+**Algorithm go_back():**
 
-To implement **multiplication of two polynomials** using **singly linked lists** and display the result.
+1. If `current == NULL` or `current→prev == NULL`:
+   - Output "No previous page."
+2. Else:
+   - Set `current = current→prev`.
+   - Display "Moved back to: current→url".
 
-## Algorithm
+### 3. Go Forward
 
-1. Start
+**Algorithm go_forward():**
 
-2. Represent Polynomial
+1. If `current == NULL` or `current→next == NULL`:
+   - Output "No next page."
+2. Else:
+   - Set `current = current→next`.
+   - Display "Moved forward to: current→url".
 
-   - Each term is represented as a **node** with:
-     - `coeff` → coefficient of the term
-     - `exp` → exponent of the term
-     - `next` → pointer to the next term
+### 4. Display Current Page
 
-3. Read the number of terms and corresponding `(coefficient, exponent)` pairs for the first polynomial and store them in `poly1`.
+**Algorithm display_current():**
 
-4. Read the number of terms and corresponding `(coefficient, exponent)` pairs for the second polynomial and store them in `poly2`.
+1. If `current == NULL`:
+   - Output "No page currently opened."
+2. Else:
+   - Display "Current Page: current→url".
 
-5. Multiply Two Polynomials (with Combining Like Terms)
+### 5. Display Browsing History
 
-   - Initialize `result = NULL`.
-   - For each term in `poly1`:
-     - For each term in `poly2`:
-     - Multiply coefficients → `coeff = poly1→coeff * poly2→coeff`.
-     - Add exponents → `exp = poly1→exp + poly2→exp`.
-     - Insert `(coeff, exp)` into `result` as follows:
-       - If a term with the same exponent exists in `result`, add the new coefficient to it.
-       - Otherwise, create a new node and append it to the list.
-   - Return `result`.
+**Algorithm display_history():**
 
-6. Display `poly1`, `poly2`, and the `result` polynomials
-
-   - Traverse through the list.
-   - Print each term in the format `coeff x^exp`.
-   - If not the last term, print `" + "`.
-
-7. Stop.
+1. If `head == NULL`:
+   - Output "No browsing history."
+2. Else:
+   - Initialize `temp = head`.
+   - While `temp != NULL`:
+     - If `temp == current`, highlight as current page: `>> temp→url`
+     - Else, display `temp→url`
+     - Move `temp = temp→next`.
 
 ## ⌨️ Output (Example)
 
 ```
-Enter number of terms for Polynomial 1: 2
-Enter coefficient and exponent for term 1: 3 2
-Enter coefficient and exponent for term 2: 2 1
+Browser Navigation Simulation:
+1. Visit New Page
+2. Back
+3. Forward
+4. Display Current Page
+5. Display Browsing History
+6. Exit
+Enter your choice: 1
+Enter URL: www.google.com
+Visited: www.google.com
 
-Enter number of terms for Polynomial 2: 2
-Enter coefficient and exponent for term 1: 1 1
-Enter coefficient and exponent for term 2: 4 0
+Enter your choice: 1
+Enter URL: www.github.com
+Visited: www.github.com
 
-Polynomial 1: 3x^2 + 2x^1
-Polynomial 2: 1x^1 + 4x^0
-Product: 3x^3 + 14x^2 + 8x^1
+Enter your choice: 1
+Enter URL: www.stackoverflow.com
+Visited: www.stackoverflow.com
+
+Enter your choice: 2
+Moved back to: www.github.com
+
+Enter your choice: 2
+Moved back to: www.google.com
+
+Enter your choice: 3
+Moved forward to: www.github.com
+
+Enter your choice: 4
+Current Page: www.github.com
+
+Enter your choice: 5
+Browsing History:
+www.google.com
+>> www.github.com
+www.stackoverflow.com
+
+Enter your choice: 1
+Enter URL: www.reddit.com
+Visited: www.reddit.com
+
+Enter your choice: 5
+Browsing History:
+www.google.com
+>> www.reddit.com
+
+Enter your choice: 6
+Exiting program...
 ```
+
+
+## 💻 Code Screenshot
+
+![Code Screenshot](/screenshots/5.1.png)
+![Code Screenshot](/screenshots/5.2.png)
+
+## 🖥️ Output Screenshot
+
+![Code Screenshot](/screenshots/5.out.png)

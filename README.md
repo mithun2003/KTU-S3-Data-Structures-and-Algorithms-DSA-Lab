@@ -19,7 +19,7 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 │   ├── exp3.c
 │   └── README.md
 ├── ...
-├── experiment_18/
+├── experiment_20/
 │   ├── exp18.c
 │   └── README.md
 └── README.md
@@ -28,28 +28,28 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 
 ## 🧪 List of Experiments
 
-| Expt. No. | Experiment                                                                                            |
-| --------- | ----------------------------------------------------------------------------------------------------- |
-| 1         | [Find the sum of two sparse polynomials using arrays](./experiment_1)                                 |
-| 2         | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2)                |
-| 3         | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3)                 |
-| 4         | [Implement Queue arrays](./experiment_4)                           |
-| 5         | [Implement Circular Queue using arrays](./experiment_4)                           |
-| 6         | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_5) |
-| 7         | [Implement addition of polynomials using singly linked lists](./experiment_6)      |
-| 8        | [Implement multiplication of polynomials using singly linked lists](./experiment_6)      |
-| 9         | [Create a binary tree for an arithmetic expression and find prefix/postfix equivalent](./experiment_9/)|
-| 10         | Implement a dictionary of word-meaning pairs using binary search trees                                |
-| 11         | Find the shortest distance of every cell from a landmine inside a maze                                |
-| 12        | Water jug problem (10L, 7L, 4L containers) modeled as a graph                                         |
-| 13        | Implement find-and-replace feature in a text editor                                                   |
-| 14        | Implement efficient search for an item in a sorted array                                              |
-| 15        | Implement Bubble Sort, Insertion Sort, Radix Sort, Quick Sort, and Merge Sort, then compare steps     |
-| 16        | Customer queue prioritization (Differently abled > Senior citizen > Defense > Ordinary)               |
-| 17        | Implement a spell checker using a hash table with fast lookup & suggestions                           |
-| 18        | Simulation of a basic memory allocator and garbage collector using doubly linked list                 |
-| 19        | Maximize activity points by participating in at most **k** events                                     |
-| 20        | Merge **k** sorted lists into a single sorted list using a min-heap                                   |
+| Exp. No. | Experiment                                                                                                                                                                                                                                                                 |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1         | [Find the sum of two sparse polynomials using arrays](./experiment_1)                                                                                                                                                                                                      |
+| 2         | [Find the transpose of a sparse matrix and sum of two sparse matrices](./experiment_2)                                                                                                                                                                                     |
+| 3         | [Convert infix expression to postfix/prefix and evaluate using stack](./experiment_3)                                                                                                                                                                                      |
+| 4         | [Implement Queue arrays](./experiment_4_5/)                                                                                                                                                                                                                                |
+| 5         | [Implement Circular Queue using arrays](./experiment_4_5/)                                                                                                                                                                                                                 |
+| 6         | [Implement back and forward navigation of visited web pages using doubly linked list](./experiment_6)                                                                                                                                                                      |
+| 7         | [Implement addition of polynomials using singly linked lists](./experiment_7_8/)                                                                                                                                                                                           |
+| 8         | [Implement multiplication of polynomials using singly linked lists](./experiment_7_8/)                                                                                                                                                                                     |
+| 9         | [Create a binary tree for an arithmetic expression and find prefix/postfix equivalent](./experiment_9/)                                                                                                                                                                    |
+| 10        | [Implement a dictionary of word-meaning pairs using binary search trees](./experiment_10/)                                                                                                                                                                                 |
+| 11        | Given an array of sorted items, implement an efficient algorithm to search for specific item in the array(binary search) / Implement efficient search for an item in a sorted array                                                                                        |
+| 12        | Implement Bubble Sort, Insertion Sort, Radix Sort, Quick Sort, and Merge Sort, then compare steps                                                                                                                                                                          |
+| 13        | Implement a spell checker using a hash table to store a dictionary of words for fast lookup. Implement functions to check if a word is valid and to suggest corrections for misspelled words / Implement a spell checker using a hash table with fast lookup & suggestions |
+| 14        | Simulation of a basic memory allocator and garbage collector using doubly linked list                                                                                                                                                                                      |
+| 15        | Water jug problem (10L, 7L, 4L containers) modeled as a graph                                                                                                                                                                                                              |
+| 16        | Implement find-and-replace feature in a text editor                                                                                                                                                                                                                        |
+| 17        | Implement efficient search for an item in a sorted array                                                                                                                                                                                                                   |
+| 18        | Customer queue prioritization (Differently abled > Senior citizen > Defense > Ordinary)                                                                                                                                                                                    |
+| 19        | Maximize activity points by participating in at most **k** events                                                                                                                                                                                                          |
+| 20        | Merge **k** sorted lists into a single sorted list using a min-heap                                                                                                                                                                                                        |
 
 ## ⚙️ Setup Instructions
 
@@ -63,7 +63,7 @@ KTU-S3-Data-Structures-and-Algorithms-DSA-Lab/
 2. Navigate to a specific experiment folder
 
    ```
-   cd Experiment-01
+   cd experiment_1
    ```
 
 3. Compile and run
